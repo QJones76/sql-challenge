@@ -38,7 +38,8 @@ CREATE TABLE "salaries" (
     "salary" int   NOT NULL
 );
 
--- Step 3: Add foreign key constraints
+-- Step 3: Import all datasets
+-- Step 4: Add all foreign key constraints
 ALTER TABLE "dept_emp" 
     ADD CONSTRAINT "fk_dept_emp_emp_no" FOREIGN KEY ("emp_no")
     REFERENCES "employees" ("emp_no");
